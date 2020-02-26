@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+<head>
+  
+  <title>hexo-build - 瑜瑾的小破站</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  
+  
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/png" />
+  <meta name="description" content="历经一番波折也算是正式搭建完了自己的博客 ，但却不知道该写些什么，应某鸭永远滴神的要求，就写一下怎么建立自己的博客吧。网上相关的教程非常多，我也不过是拾人牙慧罢了，建议还是看别人写的嗷，我只是水一篇文章而已。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo-build">
+<meta property="og:url" content="https://yujin74.github.io/2020/02/26/hexo-build/index.html">
+<meta property="og:site_name" content="瑜瑾的小破站">
+<meta property="og:description" content="历经一番波折也算是正式搭建完了自己的博客 ，但却不知道该写些什么，应某鸭永远滴神的要求，就写一下怎么建立自己的博客吧。网上相关的教程非常多，我也不过是拾人牙慧罢了，建议还是看别人写的嗷，我只是水一篇文章而已。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yujin74/image/TIM%E5%9B%BE%E7%89%8720200226231905.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yujin74/image/20200226235925.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yujin74/image/20200227000950.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yujin74/image/20200227001546.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yujin74/image/20200227001939.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yujin74/image/20200227003439.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yujin74/image/20200227010127.png">
+<meta property="article:published_time" content="2020-02-26T14:29:19.000Z">
+<meta property="article:modified_time" content="2020-02-26T17:38:01.651Z">
+<meta property="article:author" content="瑜瑾">
+<meta property="article:tag" content="-hexo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/yujin74/image/TIM%E5%9B%BE%E7%89%8720200226231905.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/nexmoe/nexmoe.github.io@latest/css/style.css,npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css" crossorigin>
+  
+  <!--<link rel="stylesheet" href="/css/style.css?v=1582738690189">-->
+
+   
+    <style>
+      .nexmoe-avatar img:hover {
+        -webkit-transform: rotateZ(360deg);
+        -moz-transform: rotateZ(360deg);
+        transform: rotateZ(360deg);
+      }	
+    </style>
+  
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body class="mdui-drawer-body-left">
+  
+  <div id="nexmoe-background">
+    <div class="nexmoe-bg" style="background-image: url(https://cdn.jsdelivr.net/gh/yujin74/image/img/destiny1.jpg)"></div>
+    <div class="mdui-appbar mdui-shadow-0">
+      <div class="mdui-toolbar">
+        <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon nexmoefont icon-menu"></i></a>
+        <div class="mdui-toolbar-spacer"></div>
+        <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
+        <a href="/" title="瑜瑾" class="mdui-btn mdui-btn-icon"><img src="https://cdn.jsdelivr.net/gh/yujin74/image/img/1.jpg" alt="瑜瑾"></a>
+       </div>
+    </div>
+  </div>
+  <div id="nexmoe-header">
+      <div class="nexmoe-drawer mdui-drawer" id="drawer">
+    <div class="nexmoe-avatar mdui-ripple">
+        <a href="/" title="瑜瑾">
+            <img src="https://cdn.jsdelivr.net/gh/yujin74/image/img/1.jpg" alt="瑜瑾" alt="瑜瑾">
+        </a>
+    </div>
+    <div class="nexmoe-count">
+        <div><span>文章</span>2</div>
+        <div><span>标签</span>1</div>
+        <div><span>分类</span>0</div>
+    </div>
+    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/" title="回到首页">
+            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
+            <div class="mdui-list-item-content">
+                回到首页
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/archives" title="文章归档">
+            <i class="mdui-list-item-icon nexmoefont icon-container"></i>
+            <div class="mdui-list-item-content">
+                文章归档
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/about.html" title="关于博客">
+            <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+            <div class="mdui-list-item-content">
+                关于博客
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/frinedlink.html" title="友链">
+            <i class="mdui-list-item-icon nexmoefont icon-unorderedlist"></i>
+            <div class="mdui-list-item-content">
+                友链
+            </div>
+        </a>
+        
+    </div>
+    <aside id="nexmoe-sidebar">
+  
+  <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-search">
+        <form id="search_form" action_e="https://cn.bing.com/search?q=yujin74.github.io" onsubmit="return search();">
+            <label><input id="search_value" name="q" type="search" placeholder="搜索"></label>
+        </form>
+    </div>
+</div>
+  
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">社交按钮</h3>
+    <div class="nexmoe-widget nexmoe-social">
+        <a class="mdui-ripple" href="https://space.bilibili.com/7156773" target="_blank" mdui-tooltip="{content: '哔哩哔哩'}" style="color: rgb(231, 106, 141);background-color: rgba(231, 106, 141, .15);">
+            <i class="nexmoefont icon-bilibili"></i>
+        </a><a class="mdui-ripple" href="https://github.com/yujin74" target="_blank" mdui-tooltip="{content: 'GitHub'}" style="color: rgb(25, 23, 23);background-color: rgba(25, 23, 23, .15);">
+            <i class="nexmoefont icon-github"></i>
+        </a>
+    </div>
+</div>
+  
+  
+
+  
+  
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">标签云</h3>
+    <div id="randomtagcloud" class="nexmoe-widget tagcloud">
+      <a href="/tags/hexo/" style="font-size: 10px;">-hexo</a>
+    </div>
+    
+  </div>
+
+  
+  
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">文章归档</h3>
+    <div class="nexmoe-widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">二月 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+</aside>
+    <div class="nexmoe-copyright">
+        &copy; 2020 瑜瑾
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        & <a href="https://nexmoe.com/hexo-theme-nexmoe.html" target="_blank">Nexmoe</a>
+    </div>
+</div><!-- .nexmoe-drawer -->
+  </div>
+  <div id="nexmoe-content">
+    <div class="nexmoe-primary">
+        <div class="nexmoe-post">
+  
+      <div class="nexmoe-post-cover" style="padding-bottom: 56.25%;"> 
+          <img data-src="https://cdn.jsdelivr.net/gh/yujin74/image/miku2 .png" data-sizes="auto" alt="hexo-build" class="lazyload">
+          <h1>hexo-build</h1>
+      </div>
+  
+  
+  <div class="nexmoe-post-meta" style="margin:10px 0!important;">
+    <a><i class="nexmoefont icon-calendar-fill"></i>2020年02月26日</a>
+    <a><i class="nexmoefont icon-areachart"></i>1.6k 字</a>
+    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 6 分钟</a>
+</div>
+
+  <div class="nexmoe-post-right">
+    
+      <div class="nexmoe-fixed">
+        <div class="nexmoe-valign">
+            <div class="nexmoe-toc">
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#写在前面"><span class="toc-number">1.</span> <span class="toc-text">写在前面</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#下面是正文"><span class="toc-number">2.</span> <span class="toc-text">下面是正文</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Node-js"><span class="toc-number">2.1.</span> <span class="toc-text">安装Node.js</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装git"><span class="toc-number">2.2.</span> <span class="toc-text">安装git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#添加国内镜像源"><span class="toc-number">2.3.</span> <span class="toc-text">添加国内镜像源</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#注册GitHub"><span class="toc-number">2.4.</span> <span class="toc-text">注册GitHub</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Hexo"><span class="toc-number">2.5.</span> <span class="toc-text">安装Hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#将本地博客推送到github"><span class="toc-number">2.6.</span> <span class="toc-text">将本地博客推送到github</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#写文章，推送文章"><span class="toc-number">2.7.</span> <span class="toc-text">写文章，推送文章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#美化博客"><span class="toc-number">2.8.</span> <span class="toc-text">美化博客</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#写在最后"><span class="toc-number">2.9.</span> <span class="toc-text">写在最后</span></a></li></ol></li></ol>
+            </div>
+        </div>
+      </div>
+    
+  </div>
+
+  <article>
+    <p>历经一番波折也算是正式搭建完了自己的博客 ，但却不知道该写些什么，应某鸭<del>永远滴神</del>的要求，就写一下怎么建立自己的博客吧。网上相关的教程非常多，我也不过是拾人牙慧罢了，建议还是看别人写的嗷，我只是水一篇文章而已。  </p>
+<a id="more"></a>
+<h1 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h1><p>我使用的是Hexo+GitHub Page的方法搭建博客，这也是最方便的搭建个人博客的方法了<del>大概</del>。关于hexo和github就不做过多的介绍了，这里甩上 <a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">hexo官方文档</a>，有兴趣的小伙伴请自行翻阅。（注：本教程仅适用于windows用户，mac用户请自行百度）  </p>
+<h1 id="下面是正文"><a href="#下面是正文" class="headerlink" title="下面是正文"></a>下面是正文</h1><h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p>首先安装<a href="https://nodejs.org/dist/v12.16.1/node-v12.16.1-x64.msi" target="_blank" rel="noopener">Node.js长期支持版</a>，我给出的是64位下载链接，如有其他需求访问请<a href="https://godweiyang.com/2018/04/13/hexo-blog/" target="_blank" rel="noopener">Node.js官网</a>。<br>安装选项全部默认，一路next到底。安装完成后，打开Windows命令提示符（win+r，然后输入cmd），输入<code>node -v</code>和<code>npm -v</code>，出现如图所示的结果就说明安装好了（版本号可能有所不同）<del>你问我没安装成功怎么办？重新装啊</del>。<img data-sizes="auto" data-src="https://cdn.jsdelivr.net/gh/yujin74/image/TIM%E5%9B%BE%E7%89%8720200226231905.png" alt="" class="lazyload">  </p>
+<h2 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h2><p>为了把我们本地的网页上传到github，需要安装<a href="https://git-scm.com/download/win" target="_blank" rel="noopener">git</a>，根据自己的系统选择对应的版本即可。安装过程同样可以一路默认，在最后一步时选择<code>Use Git from the Windows Command Prompt</code>。安装完成后同样打开命令提示符，输入<code>git --version</code>验证是否安装成功。<img data-sizes="auto" data-src="https://cdn.jsdelivr.net/gh/yujin74/image/20200226235925.png" alt="" class="lazyload"></p>
+<h2 id="添加国内镜像源"><a href="#添加国内镜像源" class="headerlink" title="添加国内镜像源"></a>添加国内镜像源</h2><p>如果没有梯子的话，可以选择使用国内的镜像源<del>国外的网站那速度大家都懂</del>，这里我选择的是阿里的镜像源，也可以选择其他镜像源。  </p>
+<pre><code>npm config set registry https://registry.npm.taobao.org</code></pre><h2 id="注册GitHub"><a href="#注册GitHub" class="headerlink" title="注册GitHub"></a>注册GitHub</h2><p>打开<a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>，按照下图所示注册一个账号并登录,具体流程就不过多赘述了<del>善用网页翻译</del><img data-sizes="auto" data-src="https://cdn.jsdelivr.net/gh/yujin74/image/20200227000950.png" alt="" class="lazyload"><br>点击右上角的➕，选择New repository<img data-sizes="auto" data-src="https://cdn.jsdelivr.net/gh/yujin74/image/20200227001546.png" alt="" class="lazyload"><br>如图所示，输入项目名称，比如你的github名字叫<code>yaya</code>，那么项目的名称就要叫<code>yaya.github.io</code>，勾选默认生成README，最后点击绿色小按钮就完成了。<img data-sizes="auto" data-src="https://cdn.jsdelivr.net/gh/yujin74/image/20200227001939.png" alt="" class="lazyload"></p>
+<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>终于轮到主角登场了，在你喜欢的地方新建一个文件夹用来存放博客文件，比如我的文件就存在<code>D:\github\blog\new</code>目录下，进入这个文件夹，在空白的地方点击右键，选择<code>Git Bash Here</code>（如果没有建议重装一遍git，再没有我也不会了），打开git的控制台窗口，以后我们的操作都使用这个窗口，不用命令提示符那个丑的要死的东西了<del>虽然这个也没多好看</del><br>输入<code>npm i hexo-cli -g</code>来安装hexo，过程可能比较久，耐心等待。安装完成后 输入<code>hexo -v</code>验证是否安装完成。<img data-sizes="auto" data-src="https://cdn.jsdelivr.net/gh/yujin74/image/20200227003439.png" alt="" class="lazyload"><br>输入<code>hexo init</code>来初始化我们的博客<br>输入<code>hexo install</code>安装必备组件（也可能不需要这一步？）。<br>输入<code>hexo g</code>生成静态网页<br>输入<code>hexo s</code>打开本地服务器，然后打开浏览器，打开<a href="localhost:4000">localhost:4000</a>,就可以看到自己的博客了看完之后记得回到gitbush，按下<code>ctrl+c</code>关闭本地服务器。</p>
+<h2 id="将本地博客推送到github"><a href="#将本地博客推送到github" class="headerlink" title="将本地博客推送到github"></a>将本地博客推送到github</h2><p>现在我们的博客还只是在本地，需要推送到刚刚注册的github上，才能被小伙伴们看到。<br>首先，还是打开git bush，输入以下命令</p>
+<pre><code>git config --global user.name &quot;你的用户名&quot;
+git config --global user.email &quot;注册github用的邮箱&quot;</code></pre><p>输入以下命令生成SSH key</p>
+<pre><code>ssh-keygen -t rsa -C &quot;你的邮箱&quot;
+cat ~/.ssh/id_rsa.pub</code></pre><p>将输出的内容复制，打开github，在头像下面点击<code>settings</code>，再点击<code>SSH and GPG keys</code>，<code>New SSH key</code>，名字随意，将刚刚复制的内容填入<code>key</code>框中，点击<code>Add SSH key</code>确认保存。<br>在git bush中输入<code>cat ~/.ssh/id_rsa.pub</code>，如果像下图这样出现了你的用户名就成功了<img data-sizes="auto" data-src="https://cdn.jsdelivr.net/gh/yujin74/image/20200227010127.png" alt="" class="lazyload"><br>打开博客根目录下的_config.yml文件，这是博客的配置文件，在这里你可以修改与博客相关的各种信息。<br>修改最后一行的配置</p>
+<pre><code>deploy:
+  type: git
+  repository: https://github.com/你的用户名/你的用户名.github.io
+  branch: master</code></pre><h2 id="写文章，推送文章"><a href="#写文章，推送文章" class="headerlink" title="写文章，推送文章"></a>写文章，推送文章</h2><p>首先在博客根目录下右键打开git bash，输入<code>npm i hexo-deployer-git</code>安装扩展。<br>然后输入<code>hexo new post &quot;文章名&quot;</code>，新建一篇文章。<br>打开博客根目录下的<code>source</code>文件夹，再打开里面的<code>_post</code>文件夹，可以看到里面多了一个<code>.md</code>文件，这是使用markdown格式编写的文章，打开它，就可以愉快的使用markdown语言来写你的文章了，关于markdown语言，请<a href="https://www.runoob.com/markdown/md-tutorial.html" target="_blank" rel="noopener">点击这里</a>学习相关语法，当然你也可以自行选择其他教程。<del>也可以催我更新</del><br>写完文章之后，在git bush输入</p>
+<pre><code>hexo g
+hexo s</code></pre><p>打开<a href="localhost:4000">localhost:4000</a>，在本地预览一下效果，觉得没问题了就输入</p>
+<pre><code>hexo d</code></pre><p>推送到github<br>自信的话也可以跳过本地预览<code>hexo s</code>步骤，直接输入</p>
+<pre><code>hexo g
+hexo d</code></pre><p>推送到github，上面两条语句也可以合并成</p>
+<pre><code>hexo g -d
+或者
+hexo d -g</code></pre><p>两者效果一样<br>推送完成后 ，打开<code>你的用户名.github.io</code>，就可以看到刚刚发布的文章了。</p>
+<h2 id="美化博客"><a href="#美化博客" class="headerlink" title="美化博客"></a>美化博客</h2><p>是不是觉得博客很丑？是不是想要个性化定制？<a href="https://hexo.io/themes/" target="_blank" rel="noopener">点击这里</a>，这是网友们自己制作并上传的主题，选择一个你喜欢的，对照着主题的说明文档开始diy你的博客吧。<br>等我把这个主题稍微搞明白了，可能会再水一篇吧（发出了咕咕咕的声音）  </p>
+<h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h2><p>这是我第一次写博客，也是第一次写教程，还是一个自己也一知半解的东西，所以有很多疏漏。有很多东西没有讲到，建议各位翻阅<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">hexo官方文档</a>以及其他大佬的教程，有什么问题也可以一起探讨。</p>
+
+  </article>
+
+  <div class="nexmoe-post-meta">
+    
+    
+        <a class="nexmoefont icon-tag-fill -link" href="/tags/hexo/" rel="tag">-hexo</a>
+    
+</div>
+
+  <div class="nexmoe-post-footer">
+    
+      
+  <div class="nexmoe-post-copyright">
+    <strong>本文作者：</strong>瑜瑾<br>
+    <strong>本文链接：</strong><a href="https://yujin74.github.io/2020/02/26/hexo-build/" title="https:&#x2F;&#x2F;yujin74.github.io&#x2F;2020&#x2F;02&#x2F;26&#x2F;hexo-build&#x2F;" target="_blank" rel="noopener">https:&#x2F;&#x2F;yujin74.github.io&#x2F;2020&#x2F;02&#x2F;26&#x2F;hexo-build&#x2F;</a><br>
+    
+      <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+    
+  </div>
+
+
+    
+    <section class="nexmoe-comment">
+    <div class="valine"></div>
+<script src='https://cdn.jsdelivr.net/npm/valine@1.3.9/dist/Valine.min.js'></script>
+<script>
+    // 使用方法 https://valine.js.org/quickstart.html
+    new Valine({
+        el: '.valine',
+        appId: 'b9CW4XmNlA1tHTK7DW309Mir-gzGzoHsz',
+        appKey: 'n4LEM8w93jNWhJVNQFWtyxd6'
+    })
+</script>
+</section>
+  </div>
+</div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js,gh/nexmoe/nexmoe.github.io@latest/js/app.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<!--<script src="/js/app.js?v=1582738690191"></script>-->
+
+
+    <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
+
+
+
+  
+
+
+
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/miku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body>
+
+</html>
