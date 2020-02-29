@@ -4,7 +4,7 @@
 
 <head>
   
-  <title>hexo-build - 瑜瑾的小破站</title>
+  <title>如何用Hexo+GitHub搭建个人博客？ - 瑜瑾的小破站</title>
   <meta charset="UTF-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
@@ -14,7 +14,7 @@
   <link rel="shortcut icon" href="/favicon.ico" type="image/png" />
   <meta name="description" content="历经一番波折也算是正式搭建完了自己的博客 ，但却不知道该写些什么，应某鸭永远滴神的要求，就写一下怎么建立自己的博客吧。网上相关的教程非常多，我也不过是拾人牙慧罢了，建议还是看别人写的嗷，我只是水一篇文章而已。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo-build">
+<meta property="og:title" content="如何用Hexo+GitHub搭建个人博客？">
 <meta property="og:url" content="https://yujin74.github.io/2020/02/26/hexo-build/index.html">
 <meta property="og:site_name" content="瑜瑾的小破站">
 <meta property="og:description" content="历经一番波折也算是正式搭建完了自己的博客 ，但却不知道该写些什么，应某鸭永远滴神的要求，就写一下怎么建立自己的博客吧。网上相关的教程非常多，我也不过是拾人牙慧罢了，建议还是看别人写的嗷，我只是水一篇文章而已。">
@@ -27,14 +27,14 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/yujin74/image/20200227003439.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/yujin74/image/20200227010127.png">
 <meta property="article:published_time" content="2020-02-26T14:29:19.000Z">
-<meta property="article:modified_time" content="2020-02-26T17:38:01.651Z">
+<meta property="article:modified_time" content="2020-02-29T09:35:20.695Z">
 <meta property="article:author" content="瑜瑾">
 <meta property="article:tag" content="-hexo">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/yujin74/image/TIM%E5%9B%BE%E7%89%8720200226231905.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/nexmoe/nexmoe.github.io@latest/css/style.css,npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css" crossorigin>
   
-  <!--<link rel="stylesheet" href="/css/style.css?v=1582738882578">-->
+  <!--<link rel="stylesheet" href="/css/style.css?v=1582990077370">-->
 
    
     <style>
@@ -160,8 +160,8 @@
         <div class="nexmoe-post">
   
       <div class="nexmoe-post-cover" style="padding-bottom: 56.25%;"> 
-          <img data-src="https://cdn.jsdelivr.net/gh/yujin74/image/miku2 .png" data-sizes="auto" alt="hexo-build" class="lazyload">
-          <h1>hexo-build</h1>
+          <img data-src="https://cdn.jsdelivr.net/gh/yujin74/image/miku2 .png" data-sizes="auto" alt="如何用Hexo+GitHub搭建个人博客？" class="lazyload">
+          <h1>如何用Hexo+GitHub搭建个人博客？</h1>
       </div>
   
   
@@ -176,7 +176,7 @@
       <div class="nexmoe-fixed">
         <div class="nexmoe-valign">
             <div class="nexmoe-toc">
-                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#写在前面"><span class="toc-number">1.</span> <span class="toc-text">写在前面</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#下面是正文"><span class="toc-number">2.</span> <span class="toc-text">下面是正文</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Node-js"><span class="toc-number">2.1.</span> <span class="toc-text">安装Node.js</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装git"><span class="toc-number">2.2.</span> <span class="toc-text">安装git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#添加国内镜像源"><span class="toc-number">2.3.</span> <span class="toc-text">添加国内镜像源</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#注册GitHub"><span class="toc-number">2.4.</span> <span class="toc-text">注册GitHub</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Hexo"><span class="toc-number">2.5.</span> <span class="toc-text">安装Hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#将本地博客推送到github"><span class="toc-number">2.6.</span> <span class="toc-text">将本地博客推送到github</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#写文章，推送文章"><span class="toc-number">2.7.</span> <span class="toc-text">写文章，推送文章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#美化博客"><span class="toc-number">2.8.</span> <span class="toc-text">美化博客</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#写在最后"><span class="toc-number">2.9.</span> <span class="toc-text">写在最后</span></a></li></ol></li></ol>
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#写在前面"><span class="toc-number">1.</span> <span class="toc-text">写在前面</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#下面是正文"><span class="toc-number">2.</span> <span class="toc-text">下面是正文</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Node-js"><span class="toc-number">2.1.</span> <span class="toc-text">安装Node.js</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装git"><span class="toc-number">2.2.</span> <span class="toc-text">安装git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#添加国内镜像源"><span class="toc-number">2.3.</span> <span class="toc-text">添加国内镜像源</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#注册GitHub"><span class="toc-number">2.4.</span> <span class="toc-text">注册GitHub</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Hexo"><span class="toc-number">2.5.</span> <span class="toc-text">安装Hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#将本地博客推送到github"><span class="toc-number">2.6.</span> <span class="toc-text">将本地博客推送到github</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#写文章，推送文章"><span class="toc-number">2.7.</span> <span class="toc-text">写文章，推送文章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#美化博客"><span class="toc-number">2.8.</span> <span class="toc-text">美化博客</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#写在最后"><span class="toc-number">3.</span> <span class="toc-text">写在最后</span></a></li></ol>
             </div>
         </div>
       </div>
@@ -210,7 +210,7 @@ hexo d</code></pre><p>推送到github，上面两条语句也可以合并成</p>
 或者
 hexo d -g</code></pre><p>两者效果一样<br>推送完成后 ，打开<code>你的用户名.github.io</code>，就可以看到刚刚发布的文章了。</p>
 <h2 id="美化博客"><a href="#美化博客" class="headerlink" title="美化博客"></a>美化博客</h2><p>是不是觉得博客很丑？是不是想要个性化定制？<a href="https://hexo.io/themes/" target="_blank" rel="noopener">点击这里</a>，这是网友们自己制作并上传的主题，选择一个你喜欢的，对照着主题的说明文档开始diy你的博客吧。<br>等我把这个主题稍微搞明白了，可能会再水一篇吧（发出了咕咕咕的声音）  </p>
-<h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h2><p>这是我第一次写博客，也是第一次写教程，还是一个自己也一知半解的东西，所以有很多疏漏。有很多东西没有讲到，建议各位翻阅<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">hexo官方文档</a>以及其他大佬的教程，有什么问题也可以一起探讨。</p>
+<h1 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h1><p>这是我第一次写博客，也是第一次写教程，还是一个自己也一知半解的东西，所以有很多疏漏。有很多东西没有讲到，建议各位翻阅<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">hexo官方文档</a>以及其他大佬的教程，有什么问题也可以一起探讨。</p>
 
   </article>
 
@@ -252,7 +252,7 @@ hexo d -g</code></pre><p>两者效果一样<br>推送完成后 ，打开<code>�
   </div>
   <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js,gh/nexmoe/nexmoe.github.io@latest/js/app.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
-<!--<script src="/js/app.js?v=1582738882580"></script>-->
+<!--<script src="/js/app.js?v=1582990077372"></script>-->
 
 
     <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
