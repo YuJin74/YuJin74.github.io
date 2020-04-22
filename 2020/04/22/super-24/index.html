@@ -4,7 +4,7 @@
 
 <head>
   
-  <title>Hello World - 瑜瑾的小破站</title>
+  <title>python实现图片转字符画 - 瑜瑾的小破站</title>
   <meta charset="UTF-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
@@ -12,22 +12,27 @@
   
 
   <link rel="shortcut icon" href="/favicon.ico" type="image/png" />
-  <meta name="description" content="这个是官方送的文档，舍不得删2333，等我文章多了再说吧">
+  <meta name="description" content="简单通过python实现图片转字符画">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://yujin74.github.io/2020/02/25/hello-world/index.html">
+<meta property="og:title" content="python实现图片转字符画">
+<meta property="og:url" content="https://yujin74.github.io/2020/04/22/super-24/index.html">
 <meta property="og:site_name" content="瑜瑾的小破站">
-<meta property="og:description" content="这个是官方送的文档，舍不得删2333，等我文章多了再说吧">
+<meta property="og:description" content="简单通过python实现图片转字符画">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-02-25T14:38:11.191Z">
-<meta property="article:modified_time" content="2020-02-26T17:41:10.496Z">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/yujin74/image/20200422195936.png">
+<meta property="article:published_time" content="2020-04-22T10:55:26.000Z">
+<meta property="article:modified_time" content="2020-04-22T12:00:24.183Z">
 <meta property="article:author" content="瑜瑾">
+<meta property="article:tag" content="python">
+<meta property="article:tag" content="pillow">
+<meta property="article:tag" content="字符画">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/yujin74/image/20200422195936.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/nexmoe/nexmoe.github.io@latest/css/style.css,npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css" crossorigin>
   
     <link rel="stylesheet" href="//at.alicdn.com/t/font_1666371_gs6zswi227l.css">
   
-  <!--<link rel="stylesheet" href="/css/style.css?v=1586855932663">-->
+  <!--<link rel="stylesheet" href="/css/style.css?v=1587556845069">-->
 
    
     <style>
@@ -62,8 +67,8 @@
     </div>
     <div class="nexmoe-count">
         <div><span>文章</span>5</div>
-        <div><span>标签</span>3</div>
-        <div><span>分类</span>3</div>
+        <div><span>标签</span>6</div>
+        <div><span>分类</span>4</div>
     </div>
     <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
         
@@ -146,6 +151,13 @@
         
 
         <li class="category-list-item">
+          <a class="category-list-link" href="/categories/python/">python</a>
+          <span class="category-list-count">1</span>
+        </li>
+
+        
+
+        <li class="category-list-item">
           <a class="category-list-link" href="/categories/博客相关/">博客相关</a>
           <span class="category-list-count">1</span>
         </li>
@@ -162,7 +174,7 @@
   <div class="nexmoe-widget-wrap">
     <h3 class="nexmoe-widget-title">标签云</h3>
     <div id="randomtagcloud" class="nexmoe-widget tagcloud">
-      <a href="/tags/deepin/" style="font-size: 10px;">deepin</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a>
+      <a href="/tags/deepin/" style="font-size: 10px;">deepin</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/pillow/" style="font-size: 10px;">pillow</a> <a href="/tags/python/" style="font-size: 10px;">python</a> <a href="/tags/%E5%AD%97%E7%AC%A6%E7%94%BB/" style="font-size: 10px;">字符画</a>
     </div>
     
   </div>
@@ -191,14 +203,14 @@
         <div class="nexmoe-post">
   
       <div class="nexmoe-post-cover" style="padding-bottom: 56.25%;"> 
-          <img data-src="https://cdn.jsdelivr.net/gh/yujin74/image/img/destiny1.jpg" data-sizes="auto" alt="Hello World" class="lazyload">
-          <h1>Hello World</h1>
+          <img data-src="https://cdn.jsdelivr.net/gh/yujin74/image/img/destiny1.jpg" data-sizes="auto" alt="python实现图片转字符画" class="lazyload">
+          <h1>python实现图片转字符画</h1>
       </div>
   
   
   <div class="nexmoe-post-meta" style="margin:10px 0!important;">
-    <a><i class="nexmoefont icon-calendar-fill"></i>2020年02月25日</a>
-    <a><i class="nexmoefont icon-areachart"></i>98 字</a>
+    <a><i class="nexmoefont icon-calendar-fill"></i>2020年04月22日</a>
+    <a><i class="nexmoefont icon-areachart"></i>382 字</a>
     <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
 </div>
 
@@ -207,7 +219,7 @@
       <div class="nexmoe-fixed">
         <div class="nexmoe-valign">
             <div class="nexmoe-toc">
-                <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#库依赖"><span class="toc-number">1.</span> <span class="toc-text">库依赖</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#实现思路"><span class="toc-number">2.</span> <span class="toc-text">实现思路</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#代码实现"><span class="toc-number">3.</span> <span class="toc-text">代码实现</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#效果展示"><span class="toc-number">4.</span> <span class="toc-text">效果展示</span></a></li></ol>
             </div>
         </div>
       </div>
@@ -215,22 +227,64 @@
   </div>
 
   <article>
-    <p>这个是官方送的文档，舍不得删2333，等我文章多了再说吧</p>
+    <p>简单通过python实现图片转字符画</p>
 <a id="more"></a>
-<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;</code></pre>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server</code></pre>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate</code></pre>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy</code></pre>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+<h1 id="库依赖"><a href="#库依赖" class="headerlink" title="库依赖"></a>库依赖</h1><ul>
+<li><p>pillow</p>
+<p><code>pip install pillow</code></p>
+</li>
+</ul>
+<h1 id="实现思路"><a href="#实现思路" class="headerlink" title="实现思路"></a>实现思路</h1><p>字符画本质上是一系列字符的组合,如果我们将字符看作像素,不同的字符代表不同的颜色.因为最后输出的字符画是黑白的,所以首先应将图片黑白化</p>
+<p>这里引入一下灰度值的概念<code>灰度值：指黑白图像中点的颜色深度，范围一般从0到255，白色为255，黑色为0，故黑白图片也称灰度图像。</code></p>
+<p>利用下列公式将像素的rgb值转化为灰度值</p>
+<p><code>gray ＝ 0.2126 * r + 0.7152 * g + 0.0722 * b</code></p>
+<p>用不同的字符代表不同的灰度值</p>
+<p><code>ascii_char = list(&quot;$@B%8&amp;WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~&lt;&gt;i!lI;:,\&quot;^`&#39;. &quot;)</code></p>
+<h1 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h1><pre><code class="python">#-*- coding:utf-8 -*-  
+from PIL import Image  
+
+IMG=&#39;图片路径&#39;  
+
+WIDTH=60  
+HEIGHT=45  
+
+ascii_char = list(&quot;$@B%8&amp;WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~&lt;&gt;i!lI;:,\&quot;^`&#39;. &quot;)  
+
+#将256灰度映射到70个字符上  
+def get_char(r,g,b,alpha=256):#alpha透明度  
+    if alpha==0:  
+        return &#39; &#39;  
+    length=len(ascii_char)  
+    gray=int(0.2126*r+0.7152*g+0.0722*b)#计算灰度  
+    unit=(256.0+1)/length  
+    return ascii_char[int(gray/unit)]#不同的灰度对应着不同的字符  
+    #通过灰度来区分色块  
+
+if __name__==&#39;__main__&#39;:  
+    im=Image.open(IMG)  
+    im=im.resize((WIDTH,HEIGHT),Image.NEAREST)  
+    txt=&quot;&quot;  
+    for i in range(HEIGHT):  
+        for j in range(WIDTH):  
+            txt+=get_char(*im.getpixel((j,i)))  
+        txt+=&#39;\n&#39;  
+
+    print (txt)  
+    #写入文件
+    with open(&quot;output.txt&quot;,&#39;w&#39;) as f:  
+        f.write(txt)  </code></pre>
+<h1 id="效果展示"><a href="#效果展示" class="headerlink" title="效果展示"></a>效果展示</h1><p><img data-sizes="auto" data-src="https://cdn.jsdelivr.net/gh/yujin74/image/20200422195936.png" alt="image-20200422195925980" class="lazyload"></p>
+<p>日,好丑……</p>
 
   </article>
 
   <div class="nexmoe-post-meta">
     
+        <a class="nexmoefont icon-appstore-fill -link" href="/categories/python/">python</a>
+    
+    
+        <a class="nexmoefont icon-tag-fill -link" href="/tags/pillow/" rel="tag">pillow</a> <a class="nexmoefont icon-tag-fill -link" href="/tags/python/" rel="tag">python</a> <a class="nexmoefont icon-tag-fill -link" href="/tags/%E5%AD%97%E7%AC%A6%E7%94%BB/" rel="tag">字符画</a>
     
 </div>
 
@@ -239,7 +293,7 @@
       
   <div class="nexmoe-post-copyright">
     <strong>本文作者：</strong>瑜瑾<br>
-    <strong>本文链接：</strong><a href="https://yujin74.github.io/2020/02/25/hello-world/" title="https:&#x2F;&#x2F;yujin74.github.io&#x2F;2020&#x2F;02&#x2F;25&#x2F;hello-world&#x2F;" target="_blank" rel="noopener">https:&#x2F;&#x2F;yujin74.github.io&#x2F;2020&#x2F;02&#x2F;25&#x2F;hello-world&#x2F;</a><br>
+    <strong>本文链接：</strong><a href="https://yujin74.github.io/2020/04/22/super-24/" title="https:&#x2F;&#x2F;yujin74.github.io&#x2F;2020&#x2F;04&#x2F;22&#x2F;super-24&#x2F;" target="_blank" rel="noopener">https:&#x2F;&#x2F;yujin74.github.io&#x2F;2020&#x2F;04&#x2F;22&#x2F;super-24&#x2F;</a><br>
     
       <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
     
@@ -265,7 +319,7 @@
   </div>
   <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js,gh/nexmoe/nexmoe.github.io@latest/js/app.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
-<!--<script src="/js/app.js?v=1586855932665"></script>-->
+<!--<script src="/js/app.js?v=1587556845073"></script>-->
 
 
     <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
